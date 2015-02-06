@@ -13,18 +13,28 @@ html {
 /* element styles */
 .outer-wrapper {
   position: absolute; }
+  .outer-wrapper .testhdr {
+    font-family: "Press Start 2P", cursive; }
 
 .background {
   position: relative;
   margin: 0 auto;
-  background-image: url("images/background.jpg");
+  background-image: url("https://twistedsifter.files.wordpress.com/2013/05/animated-gifs-of-fighting-game-backgrounds-14.gif");
   background-position: center center;
   background-size: cover;
   padding: 0;
   width: 1200px;
-  height: 750px; }
+  height: 800px; }
 
-.testhdr {
-  font: "Press Start 2P", cursive; }
+h3 {
+  margin-top: 5px;
+  color: white;
+  font-family: "Press Start 2P", cursive; }
+
+.footer {
+  border: 5px solid #4487ff;
+  background-color: #3d4fff;
+  width: 1200px;
+  height: 150px; }
 
 /*# sourceMappingURL=main.css.map */

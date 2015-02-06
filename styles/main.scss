@@ -27,9 +27,25 @@ $border-box-sizing: true !default;
 .background {
   position: relative;
   margin: 0 auto;
-  background-image: url('style/images/background.jpg' alt='epic background');
+  background-image: url('https://twistedsifter.files.wordpress.com/2013/05/animated-gifs-of-fighting-game-backgrounds-14.gif');
   background-position: center center;
   background-size: cover;
   padding: 0;
+  width: 1200px;
+  height: 800px;
 }
+
+h3 {
+  margin-top: 5px;
+  color: white;
+  font-family: $game-font;
+}
+
+.footer {
+  border: 5px solid #4487ff; 
+  background-color: #3d4fff;
+  width: 1200px;
+  height: 150px;
+}
+
 
