@@ -1,0 +1,35 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+/* colors */
+
+$menubody: #3d4fff;
+$menuhighlight: #4487ff;
+$selectorcolor: #e4ff4a;
+$bordercolor: #cdcdcd;
+
+/* fonts */
+
+$game-font: 'Press Start 2P', cursive;
+
+/* element styles */
+
+$border-box-sizing: true !default;
+
+.outer-wrapper {
+  position: absolute;
+
+  .testhdr {
+    font-family: $game-font;
+    }
+}
+
+.background {
+  position: relative;
+  margin: 0 auto;
+  background-image: url('style/images/background.jpg' alt='epic background');
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+}
+

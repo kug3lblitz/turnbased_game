@@ -1,0 +1,30 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* colors */
+/* fonts */
+/* element styles */
+.outer-wrapper {
+  position: absolute; }
+
+.background {
+  position: relative;
+  margin: 0 auto;
+  background-image: url("images/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+  width: 1200px;
+  height: 750px; }
+
+.testhdr {
+  font: "Press Start 2P", cursive; }
+
+/*# sourceMappingURL=main.css.map */
