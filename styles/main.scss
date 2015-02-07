@@ -79,6 +79,17 @@ h3 {
   background-position: center center;
   background-size: cover;
   padding: 0;
+  width: 250px;
+  height: 200px;
+}
+
+.enemy {
+  position: relative;
+  background-image: url('images/space-llama-right.gif');
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
   width: 200px;
   height: 200px;
 }
+
