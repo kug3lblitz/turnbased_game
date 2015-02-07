@@ -32,11 +32,20 @@ $border-box-sizing: true !default;
   background-size: cover;
   padding: 0;
   width: 1200px;
-  height: 800px;
+  height: 500px;
+}
+
+.mainheader {
+  @include shift(3);
+  vertical-align: middle;
+  color: white;
+  font-family: $game-font;
 }
 
 h3 {
+  @include shift(4);
   margin-top: 5px;
+  vertical-align: middle;
   color: white;
   font-family: $game-font;
 }
@@ -48,4 +57,9 @@ h3 {
   height: 150px;
 }
 
-
+.header {
+  border: 5px solid #4487ff;
+  background-color: #3d4fff;
+  width: 1200px;
+  height: 100px;
+}
