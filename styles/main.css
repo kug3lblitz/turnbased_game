@@ -17,7 +17,7 @@ html {
     font-family: "Press Start 2P", cursive; }
 
 .background {
-  position: relative;
+  position: absolute;
   margin: 0 auto;
   background-image: url("https://twistedsifter.files.wordpress.com/2013/05/animated-gifs-of-fighting-game-backgrounds-14.gif");
   background-position: center center;
@@ -27,7 +27,7 @@ html {
   height: 500px; }
 
 .foreground {
-  position: relative;
+  position: absolute;
   margin: 0 auto;
   padding: 0;
   width: 1200px;
@@ -35,6 +35,7 @@ html {
 
 .mainheader {
   margin-left: 25.58941%;
+  position: absolute;
   height: 50px;
   vertical-align: middle;
   color: white;
@@ -48,10 +49,13 @@ h3 {
   font-family: "Press Start 2P", cursive; }
 
 .footer {
+  position: relative;
+  clear: both;
   border: 5px solid #4487ff;
   background-color: #3d4fff;
   width: 1200px;
-  height: 150px; }
+  height: 150px;
+  margin-top: 500px; }
 
 .header {
   border: 5px solid #4487ff;
@@ -60,7 +64,7 @@ h3 {
   height: 100px; }
 
 .hero {
-  position: relative;
+  float: left;
   background-image: url("images/jcvd.gif");
   background-position: center center;
   background-size: cover;
@@ -69,7 +73,7 @@ h3 {
   height: 200px; }
 
 .enemy {
-  position: relative;
+  float: right;
   background-image: url("images/space-llama-right.gif");
   background-position: center center;
   background-size: cover;

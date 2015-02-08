@@ -25,7 +25,7 @@ $border-box-sizing: true !default;
 }
 
 .background {
-  position: relative;
+  position: absolute;
   margin: 0 auto;
   background-image: url('https://twistedsifter.files.wordpress.com/2013/05/animated-gifs-of-fighting-game-backgrounds-14.gif');
   background-position: center center;
@@ -36,7 +36,7 @@ $border-box-sizing: true !default;
 }
 
 .foreground {
-  position: relative;
+  position: absolute;
   margin: 0 auto;
   padding: 0;
   width: 1200px;
@@ -45,6 +45,7 @@ $border-box-sizing: true !default;
 
 .mainheader {
   @include shift(3);
+  position: absolute;
   height: 50px;
   vertical-align: middle;
   color: white;
@@ -60,6 +61,9 @@ h3 {
 }
 
 .footer {
+  position: relative;
+  clear: both;
+  margin-top: 500px;
   border: 5px solid #4487ff; 
   background-color: #3d4fff;
   width: 1200px;
@@ -74,7 +78,7 @@ h3 {
 }
 
 .hero {
-  position: relative;
+  float: left;
   background-image: url('images/jcvd.gif');
   background-position: center center;
   background-size: cover;
@@ -84,7 +88,7 @@ h3 {
 }
 
 .enemy {
-  position: relative;
+  float: right;
   background-image: url('images/space-llama-right.gif');
   background-position: center center;
   background-size: cover;
