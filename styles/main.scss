@@ -78,7 +78,9 @@ h3 {
 }
 
 .hero {
-  float: left;
+  bottom: 50px;
+  margin-top: 250px;
+  margin-left: 120px;
   background-image: url('images/jcvd.gif');
   background-position: center center;
   background-size: cover;
@@ -89,6 +91,8 @@ h3 {
 
 .enemy {
   float: right;
+  margin-top: 250px;
+  margin-right: 150px;
   background-image: url('images/space-llama-right.gif');
   background-position: center center;
   background-size: cover;
