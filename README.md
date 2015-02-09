@@ -10,4 +10,5 @@ Game is currently incomplete, but will be finished soon.
 
 ###Music
 Main Title - Song: Bits with Byte Artist: 8-bit Weapon
+
 Combat Theme - Song: I am the Black Wizards (8 bit cover) Artist: Unknown Written by: Emperor
