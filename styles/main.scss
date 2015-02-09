@@ -77,7 +77,7 @@ h3 {
   height: 100px;
 }
 
-.hero {
+#hero {
   bottom: 50px;
   margin-top: 250px;
   margin-left: 120px;
@@ -85,11 +85,11 @@ h3 {
   background-position: center center;
   background-size: cover;
   padding: 0;
-  width: 250px;
+  width: 300px;
   height: 200px;
 }
 
-.enemy {
+#enemy {
   float: right;
   margin-top: 250px;
   margin-right: 150px;
@@ -100,4 +100,3 @@ h3 {
   width: 200px;
   height: 200px;
 }
-
