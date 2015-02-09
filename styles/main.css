@@ -12,7 +12,8 @@ html {
 /* fonts */
 /* element styles */
 .outer-wrapper {
-  position: absolute; }
+  position: absolute;
+  overflow: hidden; }
   .outer-wrapper .testhdr {
     font-family: "Press Start 2P", cursive; }
 
@@ -34,7 +35,7 @@ html {
   height: 500px; }
 
 .mainheader {
-  margin-left: 17.05961%;
+  margin-left: 25.58941%;
   position: absolute;
   height: 50px;
   vertical-align: middle;

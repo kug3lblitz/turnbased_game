@@ -18,6 +18,7 @@ $border-box-sizing: true !default;
 
 .outer-wrapper {
   position: absolute;
+  overflow: hidden;
 
   .testhdr {
     font-family: $game-font;
@@ -44,7 +45,7 @@ $border-box-sizing: true !default;
 }
 
 .mainheader {
-  @include shift(2);
+  @include shift(3);
   position: absolute;
   height: 50px;
   vertical-align: middle;
