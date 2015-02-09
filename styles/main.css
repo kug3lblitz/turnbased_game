@@ -34,7 +34,7 @@ html {
   height: 500px; }
 
 .mainheader {
-  margin-left: 25.58941%;
+  margin-left: 17.05961%;
   position: absolute;
   height: 50px;
   vertical-align: middle;
@@ -84,5 +84,38 @@ h3 {
   padding: 0;
   width: 200px;
   height: 200px; }
+
+.start-button {
+  margin-left: 42.64902%;
+  margin-top: 30px;
+  border-top: 1px solid #96d1f8;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: black 0 1px 0;
+  -webkit-box-shadow: black 0 1px 0;
+  box-shadow: black 0 1px 0;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 18.5px 37px;
+  vertical-align: middle;
+  text-decoration: none;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  font-size: 23px; }
+
+.button:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  color: #ccc; }
+
+.button:active {
+  border-top-color: #1b435e;
+  background: #1b435e; }
 
 /*# sourceMappingURL=main.css.map */
