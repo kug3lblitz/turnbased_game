@@ -9,6 +9,6 @@ Special thanks to Dan Eden for the use of his excellent animate.css library!
 Game is currently incomplete, but will be finished soon.
 
 ###Music
-Main Title - Song: Bits with Byte Artist: 8-bit Weapon
+Main Title - Song: Bits with Byte | Artist: 8-bit Weapon
 
-Combat Theme - Song: I am the Black Wizards (8 bit cover) Artist: Unknown Written by: Emperor
+Combat Theme - Song: I am the Black Wizards (8 bit cover) | Artist: Unknown | Written by: Emperor
