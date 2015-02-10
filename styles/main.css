@@ -123,4 +123,10 @@ h3 {
   opacity: 0;
   max-height: 0; }
 
+#victory {
+  font-family: "Press Start 2P", cursive; }
+
+#defeat {
+  font-family: "Press Start 2P", cursive; }
+
 /*# sourceMappingURL=main.css.map */
