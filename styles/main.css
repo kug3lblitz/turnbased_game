@@ -11,10 +11,10 @@ html {
 /* colors */
 /* fonts */
 /* element styles */
-.outer-wrapper {
+.start-screen {
   position: absolute;
   overflow: hidden; }
-  .outer-wrapper .testhdr {
+  .start-screen .testhdr {
     font-family: "Press Start 2P", cursive; }
 
 .background {
@@ -118,5 +118,9 @@ h3 {
 .button:active {
   border-top-color: #1b435e;
   background: #1b435e; }
+
+.hidden {
+  opacity: 0;
+  max-height: 0; }
 
 /*# sourceMappingURL=main.css.map */

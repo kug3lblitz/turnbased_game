@@ -11,7 +11,12 @@
 	<div class="header">
 		<h3 class="mainheader">JCVD vs Space Llama: Vengeance!</h3>
 	</div>
-	<div class="outer-wrapper">
+	<div class="start-screen">
+		
+	<!-- Main Theme Music -->
+	<audio autoplay loop src="styles/8bw-bwb.mp3" type="audio/mpeg">
+	Unsupported...get a real browser!
+	</audio>
 	
 		<div class="background">
 			<div class="foreground">
@@ -24,31 +29,7 @@
 
 		<div class="footer">
 			
-	<!-- the commented sections below should activate when "start" is pressed" -->
-			
 			<div class="action-menu">
-
-				<!-- character selection
-
-				select id="charSelect" name="character selection">
-					<option value="Van Damme"></option>
-					<option value="">"Norris"</option>
-					<option value="">"Vader"</option>
-				</select>
-				-->
-
-	<!-- enemy selection random? -->
-
-	<!-- the commented sections below should activate following character selection -->
-
-		<!--		<h3>Battle Menu</h3>
-
-				<select id="combatMenu" name="combat menu">
-					<option value="Select">Select</option>
-					<option value="physAttackMenu">Attack</option>
-					<option value="combatInventory">Item</option>
-					<option value="magicMenu">Magic</option>
-				</select> -->
 
 				<button class="start-button">START</button>
 			</div>
@@ -56,11 +37,44 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="left-container hidden">
+		<img src="styles/images/vader.png" alt="Vader" />
+		<button class="init-fight hidden" data-character="Vader">Dark Side!</button>
+	</div>
+
+	<div class="middle-container hidden">
+		<img src="styles/images/jcvd.gif" alt="JCVD">
+		<button class="init-fight hidden" data-character="JCVD">Bloodsport!</button>
+	</div>
+
+		<div class="right-container hidden">
+		<img src="styles/images/chuck.gif" alt="ranger">
+		<button class="init-fight hidden" data-character="Norris">Roundhouse!</button>
+	</div>
+
+	<div class="battle-arena">
+		<h1 id="victory" class="hidden">Victory!</h1>
+		<h1 id="defeat" class="hidden">Defeat!</h1>
+
+		<div id="player1">
+			<p id="p1-vit-display"></p>
+			<progress id="player-health"></progress>
+			<p class="character-name"></p>
+			<img src="#" alt="#" class="selected-hero" />
+			<p id="hero-dmg-display"></p>
+		</div>
+
+		<div id="nemesis">
+			<p id="nemesis-vit-display"></p>
+			<progress id="nemesis-vit"></progress>
+			<p class="nemesis-name"></p>
+			<img src="#" alt="selected-nemesis" />
+			<p id="nemesis-dmg-display"></p>
+		</div>
+	</div>
+	  
 	<script src="scripts/main.js"></script>
-	<!-- Main Theme Music -->
-	<audio autoplay loop src="styles/8bw-bwb.mp3" type="audio/mpeg">
-	Unsupported...get a real browser!
-	</audio>
 
 	<!-- Combat Music! -->
 <!--	<audio autoplay loop src="styles/blackwizards.mp3" type="audio/mpeg">
