@@ -1,97 +1,116 @@
-//vars
+(function() {
+  'use strict';
 
-var dmgAmt = "";
+  $(document).ready(function() {
 
+  var selectedEnemy;
+  var selectedHero;
 
-var JCVD = function() {
-  this.name = "jcvd";
-  this.vit = 100;
-  this.dmg = 0;
-};
+  //start button
+  $('.start-button').on('click', charSel);
+  $('.init-fight').on('click', playGame);
+  $('.replay-button').on('click', replay);
 
-var astralAlpaca = function() {
-  this.name = "Space Llama";
-  this.vit = 100;
-  this.dmg = 0;
-};
-
-// Jean Claude van Damme's constructor
-
-JCVD.prototype.attack1 = function(nemesis) {
-  if (Math.random() < 0.75 ) {
-	  dmgAmt = Math.floor(Math.random() * 20 + 1);
-	  nemesis.vit = nemesis.vit - dmgAmt;
-	  nemesis.dmg = dmgAmt;
-	  console.log("You Karate Chopped " + nemesis.name + " in the throat!" + dmgAmt + " damage!");
-  } else {
-	console.log("YOU MISSED! Prepare for a beatdown!");
-	nemesis.dmg = 0;
+  function replay() {
+    location.reload();
   }
-};
 
-JCVD.prototype.attack2 = function(nemesis) {
-  if (Math.random() < 0.3 ) {
-	  dmgAmt = Math.floor(Math.random() * 25 + 15);
-	  nemesis.dmg = dmgAmt;
-	  nemesis.vit = nemesis.vit - dmgAmt;
-	  console.log("Double Impact!" + nemesis.name + " now has " + nemesis.health + " hitpoints remaining!");
-  } else {
-	  console.log("YOU MISSED!" + nemesis.name + "\'s Gonna be...angry!");
-	  nemesis.damage = 0;
-  }
-};
+  //vars
 
-// Space Llama's constructor
+  var dmgAmt = "";
 
-astralAlpaca.prototype.attack = function(nemesis) {
-  if (Math.random() < 0.5) {
-    if(Math.random() < 0.75) {
-      dmgAmt = Math.floor(Math.random() * 20 + 1);
-      nemesis.dmg = dmgAmt;
-      nemesis.vit = nemesis.vit - dmgAmt;
-      console.log("Got suplexed by a friggin' Llama!" + dmgAmt + " damage!"+  nemesis.health + " HP left!");
+
+  var JCVD = function() {
+    this.name = "jcvd";
+    this.vit = 100;
+    this.dmg = 0;
+  };
+
+  var astralAlpaca = function() {
+    this.name = "Space Llama";
+    this.vit = 100;
+    this.dmg = 0;
+  };
+
+  // Jean Claude van Damme's constructor
+
+  JCVD.prototype.attack1 = function(nemesis) {
+    if (Math.random() < 0.75 ) {
+	    dmgAmt = Math.floor(Math.random() * 20 + 1);
+	    nemesis.vit = nemesis.vit - dmgAmt;
+	    nemesis.dmg = dmgAmt;
+	    console.log("You Karate Chopped " + nemesis.name + " in the throat!" + dmgAmt + " damage!");
     } else {
-    if (Math.random() < 0.4) {
-      dmgAmt = Math.floor(Math.random() * 25 + 10);
-      nemesis.vit = nemesis.vit - dmgAmt;
-      nemesis.dmg = dmgAmt;
-      console.log("Space Llama ate your buttons, and your pants fall down!" + nemesis.vit + " HP remain!");
-    } else {
-      console.log("You skillfully kung fu your way out of a beating!");
-      nemesis.dmg = 0;
-     }
+	  console.log("YOU MISSED! Prepare for a beatdown!");
+	  nemesis.dmg = 0;
     }
-   }
- };
+  };
 
-// Health Bars
+  JCVD.prototype.attack2 = function(nemesis) {
+    if (Math.random() < 0.3 ) {
+	    dmgAmt = Math.floor(Math.random() * 25 + 15);
+	    nemesis.dmg = dmgAmt;
+	    nemesis.vit = nemesis.vit - dmgAmt;
+	    console.log("Double Impact!" + nemesis.name + " now has " + nemesis.health + " hitpoints remaining!");
+    } else {
+	    console.log("YOU MISSED!" + nemesis.name + "\'s Gonna be...angry!");
+	    nemesis.damage = 0;
+    }
+  };
+
+  // Space Llama's constructor
+
+  astralAlpaca.prototype.attack = function(nemesis) {
+    if (Math.random() < 0.5) {
+      if(Math.random() < 0.75) {
+        dmgAmt = Math.floor(Math.random() * 20 + 1);
+        nemesis.dmg = dmgAmt;
+        nemesis.vit = nemesis.vit - dmgAmt;
+        console.log("Got suplexed by a friggin' Llama!" + dmgAmt + " damage!"+  nemesis.health + " HP left!");
+      } else {
+      if (Math.random() < 0.4) {
+        dmgAmt = Math.floor(Math.random() * 25 + 10);
+        nemesis.vit = nemesis.vit - dmgAmt;
+        nemesis.dmg = dmgAmt;
+        console.log("Space Llama ate your buttons, and your pants fall down!" + nemesis.vit + " HP remain!");
+      } else {
+        console.log("You skillfully kung fu your way out of a beating!");
+        nemesis.dmg = 0;
+       }
+      }
+     }
+   };
+
+  // Health Bars
 
 
-// add and remove functions
+  // add and remove functions
 
-function addElement() {
+  function addElement() {
 
-  var ni = document.getElementById('myDiv');
-  var numi = document.getElementById('theValue');
+    var ni = document.getElementById('myDiv');
+    var numi = document.getElementById('theValue');
 
-  var num = (document.getElementById('theValue').value -1)+ 2;
-    numi.value = num;
+    var num = (document.getElementById('theValue').value -1)+ 2;
+      numi.value = num;
 
-  var newdiv = document.createElement('div');
+    var newdiv = document.createElement('div');
 
-  var divIdName = 'my'+num+'Div';
+    var divIdName = 'my'+num+'Div';
 
-    newdiv.setAttribute('id',divIdName);
+      newdiv.setAttribute('id',divIdName);
 
-    newdiv.innerHTML = 'Element Number '+num+' has been added! <a href=\'#\' onclick=\'removeElement('+divIdName+')\'>Remove the div "'+divIdName+'"</a>';
+      newdiv.innerHTML = 'Element Number '+num+' has been added! <a href=\'#\' onclick=\'removeElement('+divIdName+')\'>Remove the div "'+divIdName+'"</a>';
 
-    ni.appendChild(newdiv);
+      ni.appendChild(newdiv);
 
-}
+  }
 
-function removeElement(divNum) {
-  var d = document.getElementById('myDiv');
-  var olddiv = document.getElementById(divNum);
-    d.removeChild(olddiv);
+  function removeElement(divNum) {
+    var d = document.getElementById('myDiv');
+    var olddiv = document.getElementById(divNum);
+      d.removeChild(olddiv);
 
-}
+  }
+ }} 
+})();

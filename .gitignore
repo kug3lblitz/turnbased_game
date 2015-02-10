@@ -1,0 +1,12 @@
+*.swp
+*.swo
+constructor.js
+constindex.html
+main.css.map
+styles/main.scss
+styles/*.map
+styles/neat
+styles/bourbon
+.sass-cache
+styles/.sass-cache
+bower_components
