@@ -32,25 +32,31 @@
 			<div class="action-menu">
 
 				<button class="start-button">START</button>
+				<button class="Attack1 hidden">Attack</button>
+				<button class="Attack2 hidden">Power Attack</button>
+				<button class="Heal hidden">Heal</button>
 			</div>
 		</div>
 	</div>
+	<div class="charSel hidden">
 
-	<div class="left-container hidden">
-		<img src="styles/images/vader.png" alt="Vader" />
-		<button class="init-fight hidden" data-character="Vader">Dark Side!</button>
-	</div>
+	  <div class="left-container hidden">
+		  <img src="styles/images/vader.png" alt="Vader" />
+		  <button class="init-fight" data-character="Vader">Dark Side!</button>
+	  </div>
 
-	<div class="middle-container hidden">
-		<img src="styles/images/jcvd.gif" alt="JCVD">
-		<button class="init-fight hidden" data-character="JCVD">Bloodsport!</button>
-	</div>
+	  <div class="middle-container hidden">
+		  <img src="styles/images/jcvd.gif" alt="JCVD">
+		  <button class="init-fight" data-character="JCVD">Bloodsport!</button>
+	  </div>
 
-		<div class="right-container hidden">
-		<img src="styles/images/chuck.gif" alt="ranger">
-		<button class="init-fight hidden" data-character="Norris">Roundhouse!</button>
+		  <div class="right-container hidden">
+		  <img src="styles/images/chuck.gif" alt="ranger">
+		  <button class="init-fight" data-character="Norris">Roundhouse!</button>
 
-	</div>
+	  </div>
+
+        </div>
 
 	<div class="battle-arena">
 		<h1 id="victory" class="hidden">Victory!</h1>
@@ -72,7 +78,9 @@
 			<p id="nemesis-dmg-display"></p>
 		</div>
 	</div>
-	  
+
+	<script src="bower_components/underscore/underscore.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="scripts/main.js"></script>
 
 	<!-- Combat Music! -->
@@ -82,3 +90,4 @@
 
 </body>
 </html>
+

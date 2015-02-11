@@ -141,6 +141,7 @@ h3 {
 .hidden {
   opacity: 0;
   max-height: 0;
+  display: none;
 }
 
 #victory {
@@ -150,5 +151,42 @@ h3 {
 #defeat {
   font-family: $game-font;
 }
+
+
+.left-container {
+  bottom: 50px;
+  margin-top: 250px;
+  margin-left: 120px;
+  background-image: url('styles/images/vader.png');
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+  width: 300px;
+  height: 200px;
+}
+
+.right-container {
+  float: right;
+  margin-top: 250px;
+  margin-right: 150px;
+  background-image: url('styles/images/jcvd.gif');
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.middle-container {
+  bottom: 50px;
+  margin-top: 250px;
+  margin-left: 300px;
+  background-image: url('styles/images/chuck.gif');
+  background-position: center center;
+  background-size: cover;
+  padding: 0;
+  width: 200px;
+  height: 200px;
+  }
 
 

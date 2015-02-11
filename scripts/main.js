@@ -3,17 +3,38 @@
 
   $(document).ready(function() {
 
+//domain/data
+
   var selectedEnemy;
   var selectedHero;
 
+//interaction
+
   //start button
-  $('.start-button').on('click', charSel);
+  $('.start-button').on('click', function(){
+  	$('#enemy').addClass('hidden');
+  	$('#hero').addClass('hidden');
+	$('.start-button').addClass('hidden');
+	$('.charSel').removeClass('hidden');
+	$('.left-container').removeClass('hidden');
+	$('.middle-container').removeClass('hidden');
+	$('.right-container').removeClass('hidden');
+	$('.init-fight').removeClass('hidden');
+	console.log("hello");
+
+	  
+  });
   $('.init-fight').on('click', playGame);
   $('.replay-button').on('click', replay);
 
   function replay() {
     location.reload();
   }
+
+  function playGame() {}
+    
+
+//domain/data
 
   //vars
 
@@ -83,34 +104,8 @@
 
   // Health Bars
 
+//application state
 
-  // add and remove functions
 
-  function addElement() {
-
-    var ni = document.getElementById('myDiv');
-    var numi = document.getElementById('theValue');
-
-    var num = (document.getElementById('theValue').value -1)+ 2;
-      numi.value = num;
-
-    var newdiv = document.createElement('div');
-
-    var divIdName = 'my'+num+'Div';
-
-      newdiv.setAttribute('id',divIdName);
-
-      newdiv.innerHTML = 'Element Number '+num+' has been added! <a href=\'#\' onclick=\'removeElement('+divIdName+')\'>Remove the div "'+divIdName+'"</a>';
-
-      ni.appendChild(newdiv);
-
-  }
-
-  function removeElement(divNum) {
-    var d = document.getElementById('myDiv');
-    var olddiv = document.getElementById(divNum);
-      d.removeChild(olddiv);
-
-  }
- }} 
+}); 
 })();
