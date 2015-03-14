@@ -22,7 +22,6 @@
 	$('.init-fight').removeClass('hidden');
 	console.log("hello");
 
-	  
   });
   $('.init-fight').on('click', playGame);
   $('.replay-button').on('click', replay);
